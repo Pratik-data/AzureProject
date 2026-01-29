@@ -1,0 +1,9 @@
+{
+	"name": "DF-PratikProject",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5ac17a22-7d9c-44c3-9389-80e5920e0ee6",
+		"tenantId": "45362a99-f132-48fd-807a-bb077d0f1937"
+	}
+}
