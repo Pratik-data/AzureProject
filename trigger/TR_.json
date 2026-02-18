@@ -1,0 +1,17 @@
+{
+	"name": "TR_",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2026-02-17T10:30:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
