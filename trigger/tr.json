@@ -1,0 +1,58 @@
+{
+	"name": "tr",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingest_incremental_optimized",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"loop_input": [
+						{
+							"schema": "dbo",
+							"table": "DimUser",
+							"cdc_col": "updated_at",
+							"from_date": ""
+						},
+						{
+							"schema": "dbo",
+							"table": "DimTrack",
+							"cdc_col": "updated_at",
+							"from_date": ""
+						},
+						{
+							"schema": "dbo",
+							"table": "DimDate",
+							"cdc_col": "date",
+							"from_date": ""
+						},
+						{
+							"schema": "dbo",
+							"table": "DimArtist",
+							"cdc_col": "updated_at",
+							"from_date": ""
+						},
+						{
+							"schema": "dbo",
+							"table": "FactStream",
+							"cdc_col": "stream_timestamp",
+							"from_date": ""
+						}
+					]
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2026-02-18T11:26:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
