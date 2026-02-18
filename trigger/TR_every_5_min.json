@@ -3,19 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "ingest_incremental",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"schema": "dbo",
-					"table": "DimUsers",
-					"cdc_col": "updated_at"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
