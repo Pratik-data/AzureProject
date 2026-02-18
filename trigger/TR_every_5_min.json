@@ -1,5 +1,5 @@
 {
-	"name": "TR_",
+	"name": "TR_every_5_min",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
@@ -9,7 +9,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 5,
-				"startTime": "2026-02-17T10:30:00",
+				"startTime": "2026-02-17T10:15:00",
 				"timeZone": "India Standard Time"
 			}
 		}
